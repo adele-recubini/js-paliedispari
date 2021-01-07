@@ -13,7 +13,8 @@
 
 var pariOdispari = prompt('pari o dispari')
 
-var sceltaUtente = prompt('scegli un numero da  1 da uno a 5 ')
+
+var sceltaUtente = parseInt(prompt('scegli un numero da  1 da uno a 5 '))
 
 //FUNZIONE 1 -- genero numeri random da uno a cinque per il pc
 var min = 1;
