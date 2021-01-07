@@ -32,9 +32,9 @@ console.log(sceltaPc);
  var somma = parseInt(sceltaUtente + sceltaPc)
  // FUNZIONE 2 --- stabilisco se la somma è pari o dispari
  function isPari(somma) {
-   // faccio un parseInt cosi mi restituisce cmw un intero
+   // faccio un parseInt cosi mi restituisce un intero
     somma = parseInt(somma);
-   if (somma & 2 === 0) {
+   if (somma % 2 === 0) {
      return true;
    }else {
      return false;
@@ -42,10 +42,11 @@ console.log(sceltaPc);
 
  }
 
- // dichiaro chi ha vinto : se la scelta è stata pari e la somma è pari vicnce l utente altrimenti il pc
+ // dichiaro chi ha vinto : se la scelta dell utente è 'pari' e la somma gestita dalla funzione è pari allora hai vinto altrimenti hai perso
+
  if (pariOdispari === 'pari' && isPari(somma)) {
 
-   console.log('la somma è ' + somma + " " + 'ha vinto');
+   console.log('la somma è ' + somma + " " + 'hai vinto');
  }else {
    console.log('la somma è ' + somma + " " +  'hai perso');
  }
