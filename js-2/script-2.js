@@ -42,7 +42,7 @@ console.log(sceltaPc);
 
  }
 
- // dichiaro chi ha vinto : se la scelta dell utente è 'pari' e la somma gestita dalla funzione è pari allora hai vinto altrimenti hai perso
+ // dichiaro chi ha vinto : se la scelta dell utente è 'pari' e la somma gestita dalla funzione è pari allora hai vinto altrimenti hai perso 
 
  if (pariOdispari === 'pari' && isPari(somma)) {
 
