@@ -15,6 +15,7 @@ var pariOdispari = prompt('pari o dispari')
 
 
 var sceltaUtente = parseInt(prompt('scegli un numero da  1 da uno a 5 '))
+console.log(sceltaUtente);
 
 //FUNZIONE 1 -- genero numeri random da uno a cinque per il pc
 var min = 1;
@@ -38,12 +39,13 @@ console.log(sceltaPc);
    }else {
      return false;
    }
+
  }
 
  // dichiaro chi ha vinto : se la scelta è stata pari e la somma è pari vicnce l utente altrimenti il pc
  if (pariOdispari === 'pari' && isPari(somma)) {
 
-   console.log('ha vinto');
+   console.log('la somma è ' + somma + " " + 'ha vinto');
  }else {
-   console.log('hai perso');
+   console.log('la somma è ' + somma + " " +  'hai perso');
  }
