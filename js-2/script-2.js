@@ -27,7 +27,7 @@ var max = 5;
 console.log(sceltaPc);
 
  // creo una variabile che sara' la mia somma
- var somma = sceltaUtente + sceltaPc
+ var somma = parseInt(sceltaUtente + sceltaPc)
  // FUNZIONE 2 --- stabilisco se la somma è pari o dispari
  function isPari(somma) {
    // faccio un parseInt cosi mi restituisce cmw un intero
@@ -45,5 +45,3 @@ console.log(sceltaPc);
  }else {
    console.log('hai perso');
  }
-
- console.log(somma);
