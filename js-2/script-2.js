@@ -25,6 +25,7 @@ var max = 5;
   return Math.floor(Math.random() * (max + 1 - min) + min)
  }
  var sceltaPc = randomNum(min,max)
+ // ricordarsi che la varialbile della funzione va inserita dopo la funzione
 
 console.log(sceltaPc);
 
@@ -42,11 +43,16 @@ console.log(sceltaPc);
 
  }
 
- // dichiaro chi ha vinto : se la scelta dell utente è 'pari' e la somma gestita dalla funzione è pari allora hai vinto altrimenti hai perso 
+ // dichiaro chi ha vinto : se la scelta dell utente è 'pari' e la somma gestita dalla funzione è pari allora hai vinto altrimenti hai perso
 
  if (pariOdispari === 'pari' && isPari(somma)) {
-
    console.log('la somma è ' + somma + " " + 'hai vinto');
- }else {
-   console.log('la somma è ' + somma + " " +  'hai perso');
+ }
+
+ else if (pariOdispari === 'dispari' && isPari(somma)) {
+   console.log('la somma è ' + somma + " " + 'hai perso');
+ }
+
+ else{
+   console.log('la somma è ' + somma + " " +  'hai vinto');
  }
